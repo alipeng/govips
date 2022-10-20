@@ -12,5 +12,5 @@ RUN set -eux; \
     apt-get install -y --no-install-recommends libvips-dev;\
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
     apt-get autoremove -y software-properties-common; \
-    apt-get purge software-properties-common; \
+    apt-get purge -y software-properties-common; \
     rm -rf /var/lib/apt/lists/*
